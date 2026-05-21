@@ -183,7 +183,7 @@ npm run dev
 ### Environment Variables (.env)
 ```env
 # Database
-DATABASE_URL=postgresql://user:password@localhost:5432/unified_legal_db
+DATABASE_URL=postgresql://....
 
 # AI Models
 OLLAMA_BASE_URL=http://localhost:11434
@@ -273,43 +273,17 @@ GET    /payments                 - List payments
 
 ## 🔧 Development
 
-### Running Tests
-```bash
-# Backend tests
-cd backend
-pytest
-
-# Frontend tests
-cd frontend
-npm test
-```
-
 ### Building for Production
 ```bash
 # Backend
 cd backend
 pip install -r requirements.txt
-# Configure production environment variables
 
 # Frontend
 cd frontend
 npm run build
 npm start
 ```
-
-## 🚢 Deployment
-
-### Docker Deployment
-```bash
-# Build and run with Docker Compose
-docker-compose up -d
-```
-
-### Cloud Deployment
-1. **Database**: Use managed PostgreSQL (AWS RDS, Google Cloud SQL)
-2. **Backend**: Deploy to container service (AWS ECS, Google Cloud Run)
-3. **Frontend**: Deploy to static hosting (Vercel, Netlify)
-4. **AI Models**: Use cloud AI services or dedicated GPU instances
 
 ## 🔒 Security Features
 
@@ -330,29 +304,13 @@ docker-compose up -d
 - **Load Balancing**: Ready for horizontal scaling
 - **CDN Integration**: Static asset optimization
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Copyright (c) 2026 Shrey Gupta. All rights reserved.
 
-## 🆘 Support
+Unauthorized copying, modification, or distribution of this software, via any medium, is strictly prohibited.
 
-- **Documentation**: [docs/](./docs/)
-- **Issues**: [GitHub Issues](https://github.com/your-repo/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/your-repo/discussions)
-
-## 🙏 Acknowledgments
-
-- Built on the foundation of three chatbot projects: AGchatbot, DMS Chatbot, and LegalPlatformChatbot
-- Powered by open-source AI models and modern web technologies
-- Designed for the legal technology community
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ---
 
